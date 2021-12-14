@@ -1,5 +1,19 @@
 {
+  "name": "platforma_new",
+  "scripts": {
+    "watch": "gulp reload"
+  },
+  "author": "spxrtxk",
+  "license": "ISC",
   "devDependencies": {
-    "gulp": "^4.0.2"
+    "browser-sync": "^2.27.7",
+    "express": "^4.17.1",
+    "gulp": "^4.0.2",
+    "gulp-express": "^0.3.5",
+    "gulp-livereload": "^4.0.2",
+    "gulp-sass": "^5.0.0",
+    "gulp-sass-glob": "^1.1.0",
+    "gulp-scss": "^1.4.0",
+    "sass": "^1.45.0"
   }
 }

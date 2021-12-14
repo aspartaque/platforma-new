@@ -1,37 +1,47 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="ru">
   <head>
     <meta charset="utf-8">
     <title>Платформа</title>
-    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="./dist/styles/style.css">
   </head>
   <body>
-    <header>
-      <div class="l-header">
-        <div class="l-header__logo">
-          <div class="l-header__logo-img">
-            <img src="./src/img/Лого.svg" alt="Платформа">
+    <main>
+      <header>
+        <div class="l-header">
+          <div class="l-header__logo">
+            <div class="l-header__logo-img">
+              <a href="#">
+                <img src="./dist/images/Лого.svg" alt="Платформа">
+              </a>
+            </div>
+          </div>
+          <div class="l-header__nav">
+            <div class="l-header__nav-menu">
+              <ul>
+                <li>
+                  <a href="#">О компании</a>
+                </li>
+                <li>
+                  <a href="#">Кейсы</a>
+                </li>
+                <li>
+                  <a href="#">Битрикс24</a>
+                </li>
+                <li>
+                  <a href="#" class="startProject">Начать проект</a>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
-        <div class="l-header__nav">
-          <div class="l-header__nav-menu">
-            <ul>
-              <li>
-                <a href="#">О компании</a>
-              </li>
-              <li>
-                <a href="#">Кейсы</a>
-              </li>
-              <li>
-                <a href="#">Битрикс24</a>
-              </li>
-              <li class="startProject">
-                <a href="#">Начать проект</a>
-              </li>
-            </ul>
-          </div>
+      </header>
+      <section class="l-main">
+        <div class="l-main__content">
+          <div class="l-main__content-desc">IT - студия</div>
+          <div class="l-main__content-tagline">Разработка веб-сайтов под ключ в Якутске</div>
         </div>
-      </div>
-    </header>
+      </section>
+    </main>
   </body>
 </html>

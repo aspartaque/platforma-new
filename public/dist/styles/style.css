@@ -1,9 +1,111 @@
-.l-header {
-  height: 20px;
+@charset "UTF-8";
+@font-face {
+  font-family: Golos;
+  src: url("../fonts/Golos-Text_Regular.woff"), url("../fonts/Golos-Text_Regular.woff2");
 }
-.l-header__logo {
-  width: 20px;
-  display: flex;
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  color: #000;
+  font-family: Golos;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 17px;
+  line-height: 20px;
 }
 
-/*# sourceMappingURL=style.css.map */
+/*Переменные*/
+/*Переменные*/
+main {
+  height: 780px;
+  background-color: #212121;
+}
+
+section {
+  max-width: 1330px;
+  margin: 0 auto;
+}
+
+header {
+  max-width: 1330px;
+  height: 100px;
+  margin: 0 auto;
+}
+
+.l-header {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.l-header__logo {
+  flex: 1;
+}
+
+.l-header__nav {
+  flex: 1;
+}
+
+.l-header__nav-menu ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+.l-header__nav-menu a {
+  color: #FFFFFF;
+  position: relative;
+}
+.l-header__nav-menu a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -16px;
+  width: 100%;
+  height: 1px;
+  background: #FFFFFF;
+  cursor: auto;
+  opacity: 0;
+  transition: 0.3s;
+}
+.l-header__nav-menu a:hover::after {
+  opacity: 1;
+  left: 0;
+}
+.l-header__nav-menu a.startProject {
+  padding: 12px 22px;
+  background: #FFFFFF;
+  color: #000000;
+}
+.l-header__nav-menu a.startProject:hover::after {
+  opacity: 0;
+}
+
+.l-main {
+  display: flex;
+  align-items: center;
+  height: calc(100% - 100px);
+}
+
+.l-main__content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.l-main__content-desc {
+  font-size: 22px;
+  line-height: 26px;
+  color: #FFFFFF;
+  margin-bottom: 24px;
+}
+
+.l-main__content-tagline {
+  width: 60%;
+  font-weight: 600;
+  font-size: 60px;
+  line-height: 72px;
+  color: #FFFFFF;
+}
