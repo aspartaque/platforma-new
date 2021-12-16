@@ -22,7 +22,7 @@ $maxW: 1330px;
 $margin0A: 0 auto;
 $colorWhite: #FFFFFF;
 $colorBlack: #000000;
-/*Переменные*/
+
 main {
   height: 780px;
   background-color: #212121;
@@ -109,4 +109,8 @@ header {
   font-size: 60px;
   line-height: 72px;
   color: $colorWhite;
+}
+/*services*/
+section.l-services {
+  height: 1000px;
 }
