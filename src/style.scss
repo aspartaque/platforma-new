@@ -56,6 +56,12 @@ header {
     display: flex;
     justify-content: space-between;
   }
+  li {
+    overflow: hidden;
+    height: 60px;
+    display: flex;
+    align-items: center;
+  }
 }
 .l-header__nav-menu {
   a {
@@ -64,7 +70,7 @@ header {
     &::after {
       content: '';
       position: absolute;
-      left: 0;
+      left: -100px;
       bottom: -16px;
       width: 100%;
       height: 1px;
