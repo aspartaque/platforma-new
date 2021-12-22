@@ -3,7 +3,6 @@
   <head>
     <meta charset="utf-8">
     <title>Платформа</title>
-   
     <link rel="stylesheet" href="./dist/styles/style.css">
   </head>
   <body>
@@ -61,7 +60,7 @@
           </div>
         </div>
       </section>
-      <section class="l-white">
+      <section class="l-light">
         <div class="l-container section-about">
           <div class="l-sm-container">
             <div class="l-about">
@@ -72,10 +71,79 @@
           </div>
         </div>
       </section>
+      <section class="l-light">
+        <div class="l-container">
+          <div class="section-industries">
+            <div class="l-title dark">
+              <span>
+                Приоритетные отрасли
+              </span>
+            </div>
+            <div class="l-sm-container">
+              <div class="l-industries__list">
+                <ul>
+                  <li>Сайты для государственных учереждений</li>
+                  <li>Интернет магазины</li>
+                  <li>Корпоративыне сайты</li>
+                  <li>Landing page</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
       <section class="l-dark">
         <div class="l-container">
-          <div class="section-services">
+          <div class="section-showreel">
             <div class="l-title white">
+              <span>
+                showreel
+              </span>
+            </div>
+            <div class="l-sm-container">
+              <div class="l-showreel__video" id='video'>
+                <video
+                  id="myVideo"
+                  poster="https://via.placeholder.com/150/000000/FFFFFF/"
+                  preload="auto"
+                  muted
+                  loop
+                >
+                  <source src="dist/images/stock-video.mp4" type="video/mp4" />
+                </video>
+                <div class="video-control" id="video-play">
+                  <a href="javascript:void(0)">
+                    <img src="dist/images/play.svg" alt="">
+                  </a>
+                </div>
+                <div class="video-control" id="video-over"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="l-light">
+        <div class="l-container">
+          <div class="section-we_do">
+            <div class="l-title dark">
+              <span>
+                Мы делаем
+              </span>
+            </div>
+            <div class="l-sm-container">
+              <div class="l-we_do">
+                <div class="l-we_do__text">
+                  Сайты, сервисы, мобильные приложения, личные кабинеты, программы лояльности и системы навигации. Мы создаем единый пользовательский опыт, строим бизнес-процессы, ориентируясь на CX, UX, аналитику и показатели бизнеса.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="l-light">
+        <div class="l-container">
+          <div class="section-services">
+            <div class="l-title dark">
               <span>
                 Услуги
               </span>
@@ -95,27 +163,81 @@
           </div>
         </div>
       </section>
-      <section class="l-light">
+      <section class="l-dark">
         <div class="l-container">
-          <div class="section-industries">
-            <div class="l-industries__wrapper">
-              <div class="l-title dark">
-                <span>
-                  Приоритетные отрасли
-                </span>
-                <span class="l-industries__wrapper-descr">
-                  Мы применяем наши решения в отреслях, где опыт взаимодействия с пользователем создает новое качество повседневной жизни
-                </span>
+          <div class="section-clients">
+            <div class="l-title white">
+              <span>
+                Наши клиенты
+              </span>
+            </div>
+            <div class="l-clients">
+              <div class="l-clients__wrapper">
+                <div class="l-clients__wrapper-row">
+                  <div class="l-clients__item"></div>
+                  <div class="l-clients__item"></div>
+                  <div class="l-clients__item"></div>
+                  <div class="l-clients__item"></div>
+                </div>
+                <div class="l-clients__wrapper-row middle-row">
+                  <div class="l-clients__item"></div>
+                  <div class="l-clients__item"></div>
+                  <div class="l-clients__item"></div>
+                  <div class="l-clients__item"></div>
+                  <div class="l-clients__item"></div>
+                  <div class="l-clients__item"></div>
+                </div>
+                <div class="l-clients__wrapper-row">
+                  <div class="l-clients__item"></div>
+                  <div class="l-clients__item"></div>
+                  <div class="l-clients__item"></div>
+                  <div class="l-clients__item"></div>
+                </div>
               </div>
-              <div class="l-industries__list">
-                <ul>
-                  <li>Госсектор</li>
-                  <li>IT</li>
-                  <li>Финансы</li>
-                  <li>Телеком</li>
-                  <li>Недвижимость</li>
-                  <li>Retail</li>
-                </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="l-dark">
+        <div class="l-container">
+          <div class="section-counts">
+            <div class="l-sm-container">
+              <div class="l-count">
+                <div class="l-count__wrapper">
+                  <div class="l-count__wrapper-row">
+                    <div class="l-count__wrapper-number">
+                      8
+                      <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M0 14.2281H14.2281V0H17.7719V14.2281H32V17.7719H17.7719V32H14.2281V17.7719H0V14.2281Z" fill="white"/>
+                      </svg>
+                    </div>
+                    <div class="l-count__wrapper-desc">
+                      <span>Lorem ipsum dolor sit amet, consectetur.</span>
+                    </div>
+                  </div>
+                  <div class="l-count__wrapper-row">
+                    <div class="l-count__wrapper-number">
+                      23
+                      <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M0 14.2281H14.2281V0H17.7719V14.2281H32V17.7719H17.7719V32H14.2281V17.7719H0V14.2281Z" fill="white"/>
+                      </svg>
+                    </div>
+                    <div class="l-count__wrapper-desc">
+                      <span>Lorem ipsum dolor sit amet.</span>
+                    </div>
+                  </div>
+                  <div class="l-count__wrapper-row">
+                    <div class="l-count__wrapper-number">
+                      35
+                      <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M0 14.2281H14.2281V0H17.7719V14.2281H32V17.7719H17.7719V32H14.2281V17.7719H0V14.2281Z" fill="white"/>
+                      </svg>
+                    </div>
+                    <div class="l-count__wrapper-desc">
+                      <span>Lorem ipsum dolor sit amet, consectetur adipiscing.</span>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -226,80 +348,8 @@
       </section>
       <section class="l-light">
         <div class="l-container">
-          <div class="section-counts">
-            <div class="l-about-count__container">
-              <div class="l-about__us">
-                <div class="l-title dark">
-                  <span>
-                    О нас
-                  </span>
-                </div>
-                <div class="l-about__us-text">
-                  <span class="l-about__us-text-about-company">
-                    Дизайн и консалтинговая компания, которая создает новые отношение людей с окружающим их цифровым миром
-                  </span>
-                  <span class="l-about__us-text-we-believe">
-                    Мы верим, что цифровые сервисы подобно человеческим отношениям, проходят через различные этапы взаимодействия - от первой встречи до настоящей любви. С эмоциональным, ореинтированным для людей подходом, мы испоьзуем дизайн чтобы создать опыт, который любят люди  
-                  </span>
-                </div>
-              </div>
-              <div class="l-count">
-                <div class="l-count__wrapper">
-                  <div class="l-count__wrapper-row">
-                    <div class="l-count__wrapper-number">
-                      <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M0 14.2281H14.2281V0H17.7719V14.2281H32V17.7719H17.7719V32H14.2281V17.7719H0V14.2281Z" fill="white"/>
-                      </svg>
-                      8
-                    </div>
-                    <div class="l-count__wrapper-desc">
-                      <span>Lorem ipsum dolor sit amet.</span>
-                    </div>
-                  </div>
-                  <div class="l-count__wrapper-row">
-                    <div class="l-count__wrapper-number">
-                      <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M0 14.2281H14.2281V0H17.7719V14.2281H32V17.7719H17.7719V32H14.2281V17.7719H0V14.2281Z" fill="white"/>
-                      </svg>
-                      10
-                    </div>
-                    <div class="l-count__wrapper-desc">
-                      <span>Lorem ipsum dolor sit amet.</span>
-                    </div>
-                  </div>
-                  <div class="l-count__wrapper-row">
-                    <div class="l-count__wrapper-number">
-                      <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M0 14.2281H14.2281V0H17.7719V14.2281H32V17.7719H17.7719V32H14.2281V17.7719H0V14.2281Z" fill="white"/>
-                      </svg>
-                      13
-                    </div>
-                    <div class="l-count__wrapper-desc">
-                      <span>Lorem ipsum dolor sit amet.</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="l-dark">
-        <div class="l-container">
           <div class="section-contacts">
-            <div class="l-title white">
-              <span>
-                Создать проект
-              </span>
-            </div>
-       
-          </div>
-        </div>
-      </section>
-      <section class="l-dark">
-        <div class="l-container">
-          <div class="section-contacts">
-            <div class="l-title white">
+            <div class="l-title dark">
               <span>
                 Контакты
               </span>
