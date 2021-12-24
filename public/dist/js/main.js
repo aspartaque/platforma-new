@@ -1,3 +1,6 @@
+$(document).foundation();
+
+
 $(function () {
   var $videoContainer = $('#video'),
     $videoControls = $('.video-control'),
@@ -32,7 +35,7 @@ function numStart(self, endNumber) {
 
 function scrollStart() {
   var height = $(window).scrollTop();
-  if(height >= 6600){
+  if(height >= 3200){
     $(".js-num").each(function(item) {
       var i = parseFloat($(this).text());
       numStart(this, i);
