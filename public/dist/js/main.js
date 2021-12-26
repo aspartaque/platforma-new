@@ -1,24 +1,5 @@
 $(document).foundation();
 
-
-$(function () {
-  var $videoContainer = $('#video'),
-    $videoControls = $('.video-control'),
-    $video = $('#myVideo')[0];
-
-  $videoControls.click(function () {
-    if ($video.paused) {
-      $video.play();
-      $videoContainer.addClass('video-is-playing');
-    } else {
-      $video.pause();
-      $videoContainer.removeClass('video-is-playing');
-      //  возвращаем постер
-      $video.load();
-    }
-  });
-});
-
 /*nums*/
 
 var stop = false;
@@ -56,6 +37,15 @@ $(window).on('scroll', function() {
 });
 
 
+/*header fixed*/
+var h = $(window).scrollTop();
+$(window).scroll(function() {
+  if (h >= 600) {
+    $(".header").addClass('sticky-header');
+  };
+});
+
+
 // var hash = window.location.hash;
 // var href = $(".l-categories__buttons-link-href").attr('href');
 // console.log(href);
@@ -65,3 +55,16 @@ $(window).on('scroll', function() {
 //   $(".l-categories__buttons-link").addClass('active');
 // }
 
+/*slider*/
+var swiper = new Swiper(".mySwiper", {
+  direction: "vertical",
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  loop: true,
+  autoplay: {
+    delay: 5000,
+  },
+  slidesPerView: 3,
+});
