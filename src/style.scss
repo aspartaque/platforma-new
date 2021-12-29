@@ -141,7 +141,10 @@ header {
     }
     &.bitrix24 {
       a {
-        color: #2FBAF2;
+        color: #757575;
+        &:hover {
+          color: #2FBAF2;
+        }
         &:hover::after {
           background: #2FBAF2;
         }
@@ -743,6 +746,7 @@ a:focus, a:hover {
   }
   .swiper-slide-active {
     color: #0B0B0B;
+    font-weight: 700;
   }
 }
 .l-project-start {
@@ -823,6 +827,81 @@ a:focus, a:hover {
     margin-right: 80px;
     &:last-child {
       margin-right: 0;
+    }
+  }
+}
+/*news*/
+.section-news {
+  padding: 100px 0;
+}
+.l-news__wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+.l-news-left {
+  width: 50%;
+  margin-right: 33px;
+  position: relative;
+}
+.l-news-sm-title {
+  span {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 30px;
+  }
+}
+.l-news-date {
+  margin-top: 20px;
+  span {
+    font-size: 16px;
+    line-height: 24px;
+    color: #757575;
+  }
+}
+.l-news-desc {
+  margin-top: 20px;
+  span {
+    font-size: 16px;
+    line-height: 24px;
+    color: #757575;
+  }
+}
+.l-news-right {
+  width: 45%;
+  
+}
+.l-news-slider {
+  .swiper-slide {
+    max-height: 300px;
+    img {
+      width: 100%;
+      object-fit: contain;
+    }
+  }
+}
+.l-news-left {
+  .swiper-button-next, .swiper-button-prev {
+    bottom: 0;
+    left: 0;
+    top: auto;
+    &::before, &::after{
+      display: none;
+    }
+  }
+  .swiper-button-next {
+    margin-left: 86px;
+    svg {
+      width: 10px;
+      height: 18px;
+    }
+  }
+  .swiper-button-prev {
+    svg {
+      width: 10px;
+      height: 18px;
+      transform: rotate(180deg);
     }
   }
 }

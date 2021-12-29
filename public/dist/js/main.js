@@ -56,7 +56,7 @@ $(window).scroll(function() {
 // }
 
 /*slider*/
-var swiper = new Swiper(".mySwiper", {
+var swiper = new Swiper(".mySwiper-vertical", {
   direction: "vertical",
   pagination: {
     el: ".swiper-pagination",
@@ -64,7 +64,26 @@ var swiper = new Swiper(".mySwiper", {
   },
   loop: true,
   autoplay: {
-    delay: 5000,
+    delay: 3000,
   },
   slidesPerView: 3,
+  speed: 700,
+});
+
+var swiper = new Swiper(".mySwiper", {
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  loop: true,
+  autoplay: {
+    delay: 3000,
+  },
+  slidesPerView: 1,
+  speed: 700,
+  spaceBetween: 10,
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
 });
