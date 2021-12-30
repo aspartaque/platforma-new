@@ -881,6 +881,26 @@ a:focus, a:hover {
 .section-news {
   padding: 100px 0;
 }
+.section-news .swiper-button-next, .section-news .swiper-button-prev {
+  bottom: 0;
+  left: 0;
+  top: auto;
+}
+.section-news .swiper-button-next::before, .section-news .swiper-button-next::after, .section-news .swiper-button-prev::before, .section-news .swiper-button-prev::after {
+  display: none;
+}
+.section-news .swiper-button-next {
+  margin-left: 86px;
+}
+.section-news .swiper-button-next svg {
+  width: 10px;
+  height: 18px;
+}
+.section-news .swiper-button-prev svg {
+  width: 10px;
+  height: 18px;
+  transform: rotate(180deg);
+}
 
 .l-news__wrapper {
   width: 100%;
@@ -929,25 +949,4 @@ a:focus, a:hover {
 .l-news-slider .swiper-slide img {
   width: 100%;
   object-fit: contain;
-}
-
-.l-news-left .swiper-button-next, .l-news-left .swiper-button-prev {
-  bottom: 0;
-  left: 0;
-  top: auto;
-}
-.l-news-left .swiper-button-next::before, .l-news-left .swiper-button-next::after, .l-news-left .swiper-button-prev::before, .l-news-left .swiper-button-prev::after {
-  display: none;
-}
-.l-news-left .swiper-button-next {
-  margin-left: 86px;
-}
-.l-news-left .swiper-button-next svg {
-  width: 10px;
-  height: 18px;
-}
-.l-news-left .swiper-button-prev svg {
-  width: 10px;
-  height: 18px;
-  transform: rotate(180deg);
 }
