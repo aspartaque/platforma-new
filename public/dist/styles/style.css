@@ -18,6 +18,10 @@
   scroll-behavior: smooth;
 }
 
+ul {
+  margin: 0;
+}
+
 a {
   color: #0B0B0B;
 }
@@ -38,6 +42,12 @@ a {
   font-size: 18px;
   line-height: 28px;
   color: #FFFFFF;
+}
+
+.black-24 {
+  font-size: 24px;
+  line-height: 36px;
+  color: #0B0B0B;
 }
 
 /*Переменные*/
@@ -586,7 +596,7 @@ a:focus, a:hover {
   transition: 0.3s;
 }
 .l-case__item-images:hover {
-  filter: drop-shadow(0px 4px 10px rgba(0, 0, 0, 0.1));
+  filter: drop-shadow(0px 4px 10px rgba(0, 0, 0, 0.4));
 }
 .l-case__item-images img {
   width: 100%;
@@ -804,6 +814,10 @@ a:focus, a:hover {
 .l-news__item-img {
   border-radius: 8px;
   overflow: hidden;
+  transition: 0.3s;
+}
+.l-news__item-img:hover {
+  filter: drop-shadow(0px 4px 10px rgba(0, 0, 0, 0.4));
 }
 
 .l-news__item-name {
@@ -936,4 +950,123 @@ a:focus, a:hover {
 #gossector, #app, #telekom, #retail, #med {
   padding-top: 190px;
   margin-top: -190px;
+}
+
+.l-breadcrumbs {
+  width: 100%;
+}
+.l-breadcrumbs ul {
+  display: flex;
+}
+.l-breadcrumbs li {
+  margin-right: 5px;
+  font-size: 18px;
+  line-height: 22px;
+  color: #6F6F6F;
+}
+.l-breadcrumbs a {
+  font-size: 18px;
+  line-height: 22px;
+  color: #6F6F6F;
+}
+
+.padding-top {
+  padding-top: 90px;
+}
+
+.l-service__title {
+  margin-top: 30px;
+}
+
+.l-service__main {
+  margin-top: 60px;
+}
+
+.l-service__tabs-header a {
+  font-size: 18px;
+  line-height: 22px;
+  color: #6F6F6F;
+}
+.l-service__tabs-header a:hover {
+  background: none;
+}
+.l-service__tabs-header li.is-active a {
+  color: #0B0B0B;
+}
+.l-service__tabs-header li {
+  position: relative;
+}
+.l-service__tabs-header li.is-active::after {
+  content: "";
+  width: 100%;
+  height: 3px;
+  background-color: #0B0B0B;
+  position: absolute;
+  bottom: -30px;
+  left: 0;
+}
+.l-service__tabs-header ul {
+  padding-bottom: 30px;
+  border-bottom: 1px solid #C5C5C5;
+}
+
+.tabs-content {
+  border: none;
+  background: none;
+}
+
+.l-service__section {
+  margin-top: 100px;
+}
+
+.l-service-desc {
+  margin-top: 30px;
+}
+
+.l-service__section-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 34px;
+  margin-top: 30px;
+}
+
+.l-service__section-item .l-title span {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 36px;
+}
+
+.l-service__section-grid-desc {
+  margin-top: 20px;
+}
+
+.l-service__section-dash {
+  margin-top: 30px;
+}
+.l-service__section-dash object {
+  width: 100%;
+}
+
+.l-service__section-dash-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 32px;
+  margin-top: 30px;
+}
+
+.l-service__dash-item-desc {
+  margin-top: 30px;
+}
+
+.ws-wrap {
+  width: 50%;
+}
+
+.tabs::after, .tabs::before {
+  display: none;
+}
+
+.tabs {
+  display: flex;
+  justify-content: space-between;
 }
