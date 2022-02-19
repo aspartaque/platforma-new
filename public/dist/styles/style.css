@@ -29,7 +29,7 @@ a {
 .gray-18 {
   font-size: 18px;
   line-height: 28px;
-  color: #9E9E9E;
+  color: #6F6F6F;
 }
 
 .black-18 {
@@ -243,6 +243,11 @@ header.fixed {
 }
 .l-clients__form-tel span {
   white-space: nowrap;
+}
+.l-clients__form-tel a {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
 }
 
 .l-clients__blocks {
@@ -663,6 +668,7 @@ a:focus, a:hover {
 
 .l-about__us-text-about-company {
   font-size: 24px;
+  font-weight: 400;
   line-height: 34px;
   color: #212121;
 }
@@ -945,6 +951,7 @@ a:focus, a:hover {
 .l-contacts__send-btn a:hover {
   color: #FFFFFF;
   border-color: #FFFFFF;
+  box-shadow: 0px 0px 5px white;
 }
 
 #gossector, #app, #telekom, #retail, #med {
@@ -1066,7 +1073,145 @@ a:focus, a:hover {
   display: none;
 }
 
-.tabs {
+.l-service__tabs-header .tabs {
   display: flex;
   justify-content: space-between;
+}
+
+.l-breadcrumbs {
+  padding: 100px 0 0 0;
+}
+
+.l-about-page {
+  padding: 0 0 100px 0;
+}
+
+.section-industries .l-clients__blocks {
+  margin-top: 0;
+  margin-bottom: 100px;
+}
+
+.l-about__us-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 59%;
+}
+.l-about__us-wrapper .l-about__us {
+  width: 100%;
+}
+.l-about__us-wrapper .l-about__us:last-child .l-service__title {
+  margin-top: 100px;
+}
+
+.section-news-detail {
+  padding: 0 0 100px 0;
+}
+
+.l-news-detail__container {
+  padding: 0 192px;
+}
+.l-news-detail__container .l-title {
+  margin-top: 20px;
+}
+
+.l-news-detail__content {
+  margin-top: 60px;
+}
+
+.news-detail__content-title span {
+  font-size: 24px;
+  line-height: 29px;
+}
+
+.news-detail__content-date {
+  margin-top: 20px;
+}
+
+.news-detail__content-text {
+  margin-top: 20px;
+}
+
+.news-detail__content-img {
+  margin-top: 20px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+.news-detail__content-img img {
+  width: 100%;
+}
+
+.l-form__content {
+  margin-top: 10px;
+}
+
+.form__content-title {
+  padding-top: 50px;
+  display: flex;
+  flex-direction: column;
+}
+.form__content-title span {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 36px;
+}
+
+.form__content-grid {
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 30px;
+}
+
+[type=text] {
+  margin-bottom: 0;
+}
+
+.form__content-input input {
+  margin-top: 10px;
+  background: #F5F5F5;
+  border: 1px solid #DDDDDD;
+  border-radius: 6px;
+}
+
+span.form__content-input-placeholder {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: normal;
+}
+
+.form__content-flex {
+  display: flex;
+  flex-wrap: wrap;
+  grid-gap: 8px;
+  margin-top: 10px;
+}
+
+.form__content-input label {
+  display: flex;
+}
+.form__content-input label span {
+  background: #F5F5F5;
+  border-radius: 6px;
+  padding: 12px 22px;
+  font-size: 16px;
+  line-height: 19px;
+  font-weight: normal;
+  color: #6F6F6F;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.form__content-input label span:hover {
+  background: #e5e5e5;
+}
+.form__content-input input:checked + label span {
+  background: #0B0B0B;
+  color: #FFFFFF;
+}
+
+[type=checkbox] {
+  display: none;
+}
+
+.form-checkboxes {
+  margin-top: 30px;
 }
